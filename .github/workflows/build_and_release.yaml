@@ -1,0 +1,8 @@
+name: Build and release Aseprite
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'BuildLog.md'
