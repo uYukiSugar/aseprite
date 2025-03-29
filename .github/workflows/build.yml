@@ -9,7 +9,7 @@ jobs:
         os: [windows-latest]
         build_type: [Release]
         ui: [gui]
-        scripting: [lua, noscripts]
+        scripting: [lua]
         exclude:
           - build_type: Debug
             ui: gui
@@ -92,7 +92,7 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: aseprite
         path: |
